@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AWS-SDK-Layer
+Resources:
+  AWSSDKLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: boto3
+      Description: boto3 with aws-xray-sdk
+      ContentUri: s3://ej-eu-central-bucket/bc32676f63b5c3dd66f0f98886952b40
+      CompatibleRuntimes:
+      - python3.7
+      LicenseInfo: MIT
+      RetentionPolicy: Retain
+  AWSSDKLayerPermission:
+    Type: AWS::Lambda::LayerVersionPermission
+    Properties:
+      Action: lambda:GetLayerVersion
+      LayerVersionArn:
+        Ref: AWSSDKLayer
+      Principal: '*'

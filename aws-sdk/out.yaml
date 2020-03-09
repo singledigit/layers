@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AWS-SDK-Layer
+Resources:
+  AWSSDKLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: aws-sdk
+      Description: aws-sdk | aws-xray | uuid | use at your own risk
+      ContentUri: s3://ej-eu-central-bucket/78c8e18a87d63e12734b6a80e2d6a319
+      CompatibleRuntimes:
+      - nodejs8.10
+      - nodejs10.x
+      LicenseInfo: MIT
+      RetentionPolicy: Retain
+  AWSSDKLayerPermission:
+    Type: AWS::Lambda::LayerVersionPermission
+    Properties:
+      Action: lambda:GetLayerVersion
+      LayerVersionArn:
+        Ref: AWSSDKLayer
+      Principal: '*'

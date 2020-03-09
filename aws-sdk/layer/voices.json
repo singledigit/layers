@@ -1,0 +1,122 @@
+{
+    "arb": {
+        "voice": "Zeina",
+        "language": "ar",
+        "label": "Arabic"
+    },
+    "cmn-CN": {
+        "voice": "Zhiyu",
+        "language": "zh",
+        "label": "Chinese:Mandarin"
+    },
+    "da-DK": {
+        "voice": "Naja",
+        "language": "da",
+        "label": "Danish"
+    },
+    "nl-NL": {
+        "voice": "Lotte",
+        "language": "nl",
+        "label": "Dutch"
+    },
+    "en-AU": {
+        "voice": "Nicole",
+        "language": "en",
+        "label": "English (Australian)"
+    },
+    "en-GB": {
+        "voice": "Amy",
+        "language": "en",
+        "label": "English (British)"
+    },
+    "en-IN": {
+        "voice": "Aditi",
+        "language": "en",
+        "label": "English (Indian)"
+    },
+    "en-US": {
+        "voice": "Joanna",
+        "language": "en",
+        "label": "English (US)"
+    },
+    "en-GB-WLS": {
+        "voice": "Geraint",
+        "language": "en",
+        "label": "English (Welsh)"
+    },
+    "fr-FR": {
+        "voice": "Celine",
+        "language": "fr",
+        "label": "French"
+    },
+    "fr-CA": {
+        "voice": "Chantal",
+        "language": "fr",
+        "label": "French (Canadian)"
+    },
+    "de-DE": {
+        "voice": "Marlene",
+        "language": "de",
+        "label": "German"
+    },
+    "it-IT": {
+        "voice": "Carla",
+        "language": "it",
+        "label": "Italian"
+    },
+    "ja-JP": {
+        "voice": "Mizuki",
+        "language": "ja",
+        "label": "Japanese"
+    },
+    "ko-KR": {
+        "voice": "Seoyeon",
+        "language": "ko",
+        "label": "Korean"
+    },
+    "pl-PL": {
+        "voice": "Ewa",
+        "language": "pl",
+        "label": "Polish"
+    },
+    "pt-BR": {
+        "voice": "Vitoria",
+        "language": "pt",
+        "label": "Portuguese (Brazillian)"
+    },
+    "pt-PT": {
+        "voice": "Ines",
+        "language": "pt",
+        "label": "Portuguese (European)"
+    },
+    "ru-RU": {
+        "voice": "Tatyana",
+        "language": "ru",
+        "label": "Russian"
+    },
+    "es-ES": {
+        "voice": "Conchita",
+        "language": "es",
+        "label": "Spanish (European)"
+    },
+    "es-MX": {
+        "voice": "Mia",
+        "language": "es",
+        "label": "Spanish (Mexican)"
+    },
+    "es-US": {
+        "voice": "Penelope",
+        "language": "es",
+        "label": "Spanish (US)"
+    },
+    "sv-SE": {
+        "voice": "Astrid",
+        "language": "sv",
+        "label": "Swedish"
+    },
+    "tr-TR": {
+        "voice": "Filiz",
+        "language": "tr",
+        "label": "Turkish"
+    }
+}

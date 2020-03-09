@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AWS-SDK-Layer
+
+Resources:
+  AWSSDKLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+        LayerName: aws-sdk
+        Description: home rolled aws-sdk layer + uuid
+        ContentUri: layer/
+        CompatibleRuntimes:
+          - nodejs8.10
+        LicenseInfo: 'MIT'
+        RetentionPolicy: Retain
+
+  AWSSDKLayerPermission:
+    Type: "AWS::Lambda::LayerVersionPermission"
+    Properties:
+      Action: lambda:GetLayerVersion
+      LayerVersionArn: !Ref AWSSDKLayer
+      Principal: '*'
